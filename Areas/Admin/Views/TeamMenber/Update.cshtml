@@ -1,0 +1,18 @@
+﻿@model TeamMenber;
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label asp-for="fullname"></label>
+                    <input asp-for="fullname" class="form-control" placeholder="Teammenber">
+                    <span class="text text-danger" asp-validation-for="fullname"></span>
+                </div>
+                <button type="submit" class="btn btn-primary me-2 text-light">Edit</button>
+                <button class="btn btn-light" asp-action="Index">Go back</button>
+            </form>
+        </div>
+    </div>
+</div>

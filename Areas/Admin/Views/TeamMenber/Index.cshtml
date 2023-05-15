@@ -1,0 +1,20 @@
+﻿@model List<TeamMenber>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Fullname</th>
+            <th scope="col">Profession</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (TeamMenber teamMenber in Model)
+        {
+            <tr>
+                <td>@teamMenber.fullname</td>
+                <td>@teamMenber.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
